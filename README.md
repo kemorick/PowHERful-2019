@@ -101,15 +101,17 @@ Click ```Add entity```.
 
 Notice the ```Entity name``` field has an at-symbol or @ sign in front of it. 
 
-Name your entity ```problem_type```.
+Name your entity ```toppings```.
 
 ![Blank create new entity screen with no values.][createNewEntity]
 
-Let's provide 3 values for entities - ```bug```, ```feature request```, and ```how do I```. If you can think of synonyms feel free to provide those as well. 
+Let's provide 3 values for entities - ```pepperoni```, ```veggie```, and ```garlic```. If you can think of synonyms feel free to provide those as well. 
 
 Click ```Add value``` to add an entity value to the list below.
 
 ![Entity screen with values per the lab.][entityValues]
+
+Are there any other toppings you might want on your pizza? What is your favorite? Add it to the list!
 
 You have now created an entity! Let's pull our intent and entity together with dialog.
 
@@ -127,7 +129,7 @@ Click ```Create```. (Additionally you can click 'x' if the chat popups in the ri
 
 ![Initial dialog screen with an annotation pointing to the create button.][createDialog]
 
-Notice there are two nodes created automatically. When adding new nodes, remember to put them between the "Welcome" node and the "Anything else" node. Nodes that are listed after the "Anything else" node will not be evaluated. Evaluation order may matter in your dialog tree.
+Notice there are two nodes created automatically. When adding new nodes, remember to put them between the "Welcome" node and the "Anything else" node. Nodes that are listed after the "Anything else" node will not be evaluated.
 
 Click ```Add node```. This will add a node between the two existing nodes.
 
@@ -137,7 +139,7 @@ Your node has been placed in the dialog tree and is ready to be constructed.
 
 ![New node in dialog tree with information form open.][newNode]
 
-Let's start by adding our intent to the ```If assistant recognizes: ``` field. Click the field and notice you can filter by # or intents. Find the ```#createTicket``` intent you created in an earlier step.
+Let's start by adding our intent to the ```If assistant recognizes: ``` field. Click the field and notice you can filter by # or intents. Find the ```#order``` intent you created in an earlier step.
 
 In the dialog tree you can see the intent name is listed in the node. Feel free to name the node as well.
 
@@ -147,7 +149,7 @@ If you name the node, you will see both the name and what the assistant recogniz
 
 ![New node adding text response per lab.][dialogAddText]
 
-Let's add some response text and test it out in the console. Type a response like ```I can help with that, but I need some more information``` so your user knows that Watson understands the #createTicket intent. 
+Let's add some response text and test it out in the console. Type a response like ```I can help you order a pizza, but I need some more information``` so your user knows that Watson understands the #order intent. 
 
 Click the ```Try It``` button in the upper left corner to open up the ```Try it out``` panel.
 
@@ -155,7 +157,7 @@ Type in one of your user examples in your intent like ```I need help```. Does Wa
 
 ![Dialog screen showing dialog node tree and node with try it out panel opened for testing Watson.][dialogTryText]
 
-Let's make this a little more useful. Hit "Customize" to the right of the Create Ticket name field. A modal will appear.
+Let's make this a little more useful. Hit "Customize" to the right of the order name field. A modal will appear.
 
 We are going to be using slots, so turn on the toggle and check the ```Prompt for everything``` box.
 
@@ -165,7 +167,7 @@ Hit ```Apply```.
 
 Your node has changed. ```Then check for:``` provides a new set of fields. 
 
-In the ```Check for``` column find your ```@problem_type``` entity. The context variable (denoted by the $) will autopopulate, keep it. 
+In the ```Check for``` column find your ```@toppings``` entity. The context variable (denoted by the $) will autopopulate, keep it. 
 
 In the ```If not present, ask``` column type ```What kind of ticket would you like to submit?```
 
@@ -182,11 +184,9 @@ Watson should have correctly identified the intent, and prompted you with the sl
 
 ## Congratulations! 
 
-You have officially completed your lab. You made your first chatbot! Now what?
+That's it! You made your first chatbot! Now what?
 
 # Next Steps
-
-You can continue accessing this lab material and your IBM Cloud account even after Think. 
 
 This is only part of a chatbot solution; you completed the backend. A typical, fully implemented chatbot solution may look something like this:
 
