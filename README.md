@@ -1,14 +1,23 @@
-# 101 Lab: Build Your Own Chatbot in 15 Minutes or Less
+# PowHERful Builds a Chatbot with Watson Assistant
 
-You should be able to complete this lab in 10-15 minutes! If you'd like to continue working on your chatbot after the lab, there will be additional steps to include more advanced techniques and even deploy.
-
-This lab will walk you through creating a chatbot to guide the user through creating a support ticket. Instead of a traditional form or wizard, this chatbot can offer a more personalized approach, soliciting more quality information from the user to build the most informative support ticket.
+This activity will walk you through creating your first chatbot. Instead of a traditional form or wizard, this chatbot can offer a more personalized experience, working with you towards a common goal.
 
 In IBM Cloud there are often multiple ways to accomplish the same steps. In the steps outlined below, you should consider this one way to accomplish a given task.
 
-## Create an instance of the Watson Assistant service
+## Login to IBM Cloud
 
-Navigate to the IBM Cloud dashboard: https://ibm.biz/Bd2Sfe
+Navigate to the IBM Cloud dashboard: cloud.ibm.com
+
+Using the username and password provided, type the username in the box.
+
+![IBM Cloud login page][login]
+
+Click ```Continue```.
+
+Once you successfully login you should see the IBM Cloud Dashboard.
+
+
+## Create an instance of the Watson Assistant service
 
 Click ```Catalog``` in the upper menu bar.
 
@@ -238,3 +247,4 @@ Take a look at the following patterns and tutorials to make your chatbot more ro
 [dialogSlot]: /images/dialogSlot.png
 [dialogSlotTest]: /images/dialogSlotTest.png
 [chatstack]: /images/chatstack.png
+[login]: /images/login.png
